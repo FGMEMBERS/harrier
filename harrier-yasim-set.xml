@@ -36,6 +36,11 @@ October 23 2001 John Check, fgpanels@rockfish.net
    <path>Aircraft/c172/Panels/c172-trans-mini-panel.xml</path>
   </panel_2>
   
+  <hud>
+   <path>Huds/Custom/default.xml</path>
+   <visibility type="bool">true</visibility>
+  </hud>
+
   <model>
    <path><!-- you need to set this --></path>
   </model>
