@@ -3,5 +3,6 @@
 <PropertyList include="harrier-yasim-set.xml">
  <sim>
   <description>Alias for harrier-yasim.</description>
+  <author>Andy Ross</author>
  </sim>
 </PropertyList>
