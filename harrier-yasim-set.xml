@@ -26,7 +26,6 @@ October 23 2001 John Check, fgpanels@rockfish.net
   </systems> 
 
   <sound>
-   <audible>true</audible>
    <path>Aircraft/a4/a4-sound.xml</path>
   </sound>
 
