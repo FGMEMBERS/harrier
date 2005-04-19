@@ -44,6 +44,12 @@ October 23 2001 John Check, fgpanels@rockfish.net
   <model>
    <path><!-- you need to set this --></path>
   </model>
+
+  <help>
+   <title>British Aerospace Harrier</title>
+   <line>"mixture" controls thrust vector</line>
+  </help>
+
  </sim>
 
  <autopilot>
