@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	<model>
+		<name>vertical speed</name>
+		<path>Aircraft/harrier/Panel/vsi-6/vsi-3d.xml</path>
+		<offsets>
+			<x-m>-15.767</x-m>
+			<y-m>-0.12</y-m>
+			<z-m>-5.410</z-m>
+			<pitch-deg>-12</pitch-deg>
+		</offsets>
+ 	</model>	
+	<model>
+		<name>attitude indicator</name>
+		<path>Aircraft/harrier/Panel/ai/ai.xml</path>
+		<offsets>
+			<x-m>-15.73</x-m>
+			<y-m>-.034</y-m>
+			<z-m>-5.545</z-m>
+			<pitch-deg>-12</pitch-deg>
+		</offsets>
+ 	</model>
+	<model>
+		<name>direction</name>
+		<path>Aircraft/harrier/Panel/remote/remote.xml</path>
+		<offsets>
+			<x-m>-15.72</x-m>
+			<y-m>-.033</y-m>
+			<z-m>-5.630</z-m>
+			<pitch-deg>-12</pitch-deg>
+		</offsets>
+ 	</model>
+	<model>
+		<name>Thrust Vector Indicator</name>
+		<path>Aircraft/harrier/Panel/thrust_vector_indicator/tvi.xml</path>
+		<offsets>
+			<x-m>-15.768</x-m>
+			<y-m>0.125</y-m>
+			<z-m>-5.396</z-m>
+			<pitch-deg>-12</pitch-deg>
+		</offsets>
+ 	</model>	
+	<model>
+		<name>SpeedIndicator</name>
+		<path>Aircraft/harrier/Panel/asi600/asi600-3d.xml</path>
+		<offsets>
+			<x-m>-15.718</x-m>
+			<y-m>0.050</y-m>
+			<z-m>-5.630</z-m>
+			<pitch-deg>-12</pitch-deg>
+		</offsets>
+ 	</model>
+	<model>
+		<name>Altimeter</name>
+		<path>Aircraft/harrier/Panel/alt/alt.xml</path>
+		<offsets>
+			<x-m>-15.73</x-m>
+			<y-m>0.049</y-m>
+			<z-m>-5.547</z-m>
+			<pitch-deg>-13</pitch-deg>
+		</offsets>
+ 	</model>				
+	<model>
+		<name>MagCompass</name>
+		<path>Aircraft/harrier/Panel/mag-compass/mag-compass.xml</path>
+		<offsets>
+			<x-m>-15.73</x-m>
+			<y-m>0.275</y-m>
+			<z-m>-5.560</z-m>
+			<pitch-deg>-28</pitch-deg>
+		</offsets>
+ 	</model>
+	
+</PropertyList>

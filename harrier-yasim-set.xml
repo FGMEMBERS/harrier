@@ -1,14 +1,4 @@
 <?xml version="1.0"?>
-<!--
-************************************************************************
-Cessna 172 simulation config. This files ties together all the components
-used by FGFS to represent the C172. Components include the flight data 
-model, instrument panel, and external 3D model.
-3D models can be downloaded from http://home.t-online.de/home/Wolfram.Kuss/
-
-October 23 2001 John Check, fgpanels@rockfish.net
-************************************************************************
--->
 
 <PropertyList>
  <sim>
@@ -18,30 +8,61 @@ October 23 2001 John Check, fgpanels@rockfish.net
   <flight-model>yasim</flight-model>
   <aero>harrier</aero>
   <fuel-fraction>1.0</fuel-fraction>
-
+  
+  <startup>
+	  <splash-texture>Aircraft/harrier/harrier-splash.rgb</splash-texture>
+  </startup>
+  
   <sound>
-   <path>Aircraft/a4/a4-sound.xml</path>
-  </sound>
-
-  <panel>
-   <path>Aircraft/Generic/Panels/generic-ifr-panel.xml</path>
-  </panel>
-  <panel_2>
-   <path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
-  </panel_2>
+   <path>Aircraft/harrier/Sound/harrier-sound.xml</path>
+  </sound>  
   
   <hud>
-   <path>Huds/Custom/default.xml</path>
+   <path>Aircraft/harrier/Panel/Hud/default.xml</path>
    <visibility type="bool">true</visibility>
   </hud>
 
+  <!-- panel file is included in the model file -->
   <model>
-   <path><!-- you need to set this --></path>
+   <path>Aircraft/harrier/Models/harrier-model.xml</path>
   </model>
 
+  
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+      <!-- x/y/z == right/up/back -->
+      <x-offset-m archive="y">0.00</x-offset-m>
+      <y-offset-m archive="y">0.79</y-offset-m>
+      <z-offset-m archive="y">3.98</z-offset-m>
+      <pitch-offset-deg archive="y">-20</pitch-offset-deg>
+    </config>
+  </view>
+  <view n="1">
+    <config>
+      <!-- x/y/z == right/up/back -->
+      <target-z-offset-m archive="y">8</target-z-offset-m>
+      <pitch-offset-deg archive="y">10</pitch-offset-deg>     
+    </config>
+  </view>  
+  <view n="2">
+     <config>
+       <!-- x/y/z == right/up/back -->
+       <target-z-offset-m archive="y">8</target-z-offset-m>
+       <pitch-offset-deg archive="y">10</pitch-offset-deg>     
+     </config>
+  </view>   
+  <view n="5">
+    <config>
+      <!-- x/y/z == right/up/back -->
+      <target-z-offset-m archive="y">8</target-z-offset-m>
+      <pitch-offset-deg archive="y">10</pitch-offset-deg>     
+    </config>
+  </view>  
+  
   <help>
    <title>British Aerospace Harrier</title>
-   <line>"mixture" controls thrust vector</line>
+   <line>"mixture" m/M controls thrust vector</line>
   </help>
 
  </sim>

@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<!-- This part should be the same for any 3D panel.  Customize the actions section -->
+<PropertyList>
+
+ <name>Harrier Panel Hotspots</name>
+ <background>Aircraft/harrier/Panel/transparent-bg.rgb</background>
+
+ <w>1024</w>
+ <h>768</h>
+ <y-offset>0</y-offset>
+
+ <instruments>
+  <instrument>
+   <name>Flaps Control</name>
+   <x>512</x>
+   <y>384</y>
+   <w>1024</w>
+   <h>768</h>
+   <w-base>1024</w-base>
+   <h-base>1024</h-base>
+
+
+ <layers>
+  <layer>
+   <name>background</name>
+   <texture>
+     <path>Aircraft/harrier/Panel/transparent-bg.rgb</path>
+     <x1>0.0</x1>
+     <y1>0.0</y1>
+     <x2>1.0</x2>
+     <y2>1.0</y2>
+   </texture>
+  </layer>
+ </layers>
+
+<!-- define hotspot actions below -->
+
+ <actions>
+	 <!-- remote compass hotspots -->
+	 <action>
+	 <name></name>
+		 <button>0</button>
+		 <x>-100</x>
+		 <y>-325</y>
+		 <w>20</w>
+		 <h>32</h>
+		 <binding>
+			 <command>property-adjust</command>
+			 <property>/instrumentation/magnetic-compass/bookmark-heading-deg</property>
+			 <step>-1</step>
+			 <min>0</min>
+			 <max>360</max>
+			 <wrap>true</wrap>
+		 </binding>
+	</action>
+  	<action>
+	  <name></name>
+	  <button>0</button>
+	  <x>-80</x>
+	  <y>-325</y>
+	  <w>20</w>
+	  <h>32</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>/instrumentation/magnetic-compass/bookmark-heading-deg</property>
+		  <step>1</step>
+		  <min>0</min>
+		  <max>360</max>
+		  <wrap>true</wrap>
+	  </binding>
+  	</action>
+ <!--++++++++++++++++++++++++++++++++++++++-->
+       <action>
+	 <name>Red Button</name>
+	 <button>0</button>
+	 <x>-135</x>
+	 <y>130</y>
+	 <w>20</w>
+	 <h>32</h>
+	 <binding>
+		 <command>property-adjust</command>
+		 <property>/instrumentation/misc/jettison</property>
+		 <step>1</step>
+		 <min>0</min>
+		 <max>360</max>
+		 <wrap>true</wrap>
+	 </binding>
+  	</action>
+	<!--++++++++++++++++++++++++++++++++++++++-->
+	<action>
+		<name>Alt calibrate down</name>
+		<button>0</button>
+		<x>5</x>
+		<y>-195</y>
+		<w>20</w>
+		<h>36</h>
+		<binding>
+			<command>property-adjust</command>
+			<property>/instrumentation/altimeter/setting-inhg</property>
+			<step>-0.01</step>
+			<min>26.0</min>
+			<max>33.0</max>
+			<wrap>false</wrap>
+		</binding>
+  </action>
+  <action>
+	  <name>Alt calibrate up</name>
+	  <button>0</button>
+	  <x>25</x>
+	  <y>-195</y>
+	  <w>20</w>
+	  <h>36</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>/instrumentation/altimeter/setting-inhg</property>
+		  <step>0.01</step>
+		  <min>26.0</min>
+		  <max>33.0</max>
+		  <wrap>false</wrap>
+	  </binding>
+  </action>
+
+	
+	
+	
+	<!--++++++++++++++++++++++++++++++++++++++-->
+ </actions>
+
+  </instrument>
+
+ </instruments>
+
+</PropertyList>
+
+
+
