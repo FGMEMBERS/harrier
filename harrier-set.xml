@@ -110,6 +110,23 @@ This is very difficult. Increase the thrust vector to about 85 degrees fairly ea
         <path>Aircraft/harrier/harrier-autopilot.xml</path>
      </autopilot>
    </systems>
+   <menubar>
+     <default>
+       <menu n="10">
+         <label>Harrier</label>
+         <enabled type="bool">true</enabled>
+         <item>
+           <label>Equipment Selection</label>
+           <binding>
+             <command>nasal</command>
+             <script>
+               equipment.showDialog();
+             </script>
+           </binding>
+         </item>
+       </menu>
+     </default>
+   </menubar>
  </sim>
  
  <!-- set a few properties -->
@@ -176,13 +193,14 @@ This is very difficult. Increase the thrust vector to about 85 degrees fairly ea
 			<name>h</name>
 			<desc>toggle HUD</desc>
 			<binding>
-				<command>property-adjust</command>
+				<command>property-toggle</command>
 				<property>sim[0]/hud/visibility[1]</property>
 			</binding>
 		</key>
 						
 	</keyboard>
 </input>
+
 <!-- load nasal scripts -->
   <nasal>
     <aar> 

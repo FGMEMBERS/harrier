@@ -52,8 +52,10 @@ updateTanker = func {
                 contact = contact_node.getValue();
                 tanker = tanker_node.getValue();
 
-                #print ("contact ", contact , " tanker " , tanker );
-                append(selectedTankers, a);
+                if (tanker and contact) {
+                    #print ("contact ", contact , " tanker " , tanker );
+                    append(selectedTankers, a);
+                }
             }
         }
         foreach(m; AllMultiplayer) {
@@ -64,8 +66,10 @@ updateTanker = func {
                 contact = contact_node.getValue();
                 tanker = tanker_node.getValue();
 
-                #print (" mp contact ", contact , " tanker " , tanker );
-                append(selectedTankers, m);
+                if (tanker and contact) {
+                   #print (" mp contact ", contact , " tanker " , tanker );
+                   append(selectedTankers, m);
+                }
             }
         }
     }
