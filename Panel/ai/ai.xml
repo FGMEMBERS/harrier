@@ -15,7 +15,7 @@
    <red>1.0</red>
    <green>0.2</green>
    <blue>0.0</blue>
-   <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+   <factor-prop>sim/model/material/instruments/factor</factor-prop>
   </emission>
  </animation>
 
@@ -23,7 +23,7 @@
   <name>PitchTranslation</name>
   <type>translate</type>
   <object-name>Pitch</object-name>
-  <property>/orientation/pitch-deg</property>
+  <property>orientation/pitch-deg</property>
   <factor>-0.00035</factor>
   <min-m>-0.01575</min-m>
   <max-m>0.01575</max-m>
@@ -38,7 +38,7 @@
   <type>rotate</type>
   <object-name>Face</object-name>
   <object-name>PitchTranslation</object-name>
-  <property>/orientation/roll-deg</property>
+  <property>orientation/roll-deg</property>
   <factor>-1</factor>
   <axis>
    <x>-1</x>
@@ -54,7 +54,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Ring</object-name>
-  <property>/orientation/roll-deg</property>
+  <property>orientation/roll-deg</property>
   <factor>-1</factor>
   <axis>
    <x>-1</x>

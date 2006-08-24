@@ -13,7 +13,7 @@
 
  <instruments>
   <instrument>
-   <name>Flaps Control</name>
+   <name>HotSpotBase</name>
    <x>512</x>
    <y>384</y>
    <w>1024</w>
@@ -48,7 +48,7 @@
 		 <h>32</h>
 		 <binding>
 			 <command>property-adjust</command>
-			 <property>/instrumentation/magnetic-compass/bookmark-heading-deg</property>
+			 <property>instrumentation/magnetic-compass/bookmark-heading-deg</property>
 			 <step>-1</step>
 			 <min>0</min>
 			 <max>360</max>
@@ -64,7 +64,7 @@
 	  <h>32</h>
 	  <binding>
 		  <command>property-adjust</command>
-		  <property>/instrumentation/magnetic-compass/bookmark-heading-deg</property>
+		  <property>instrumentation/magnetic-compass/bookmark-heading-deg</property>
 		  <step>1</step>
 		  <min>0</min>
 		  <max>360</max>
@@ -75,13 +75,13 @@
        <action>
 	 <name>Red Button</name>
 	 <button>0</button>
-	 <x>-135</x>
+	 <x>-150</x>
 	 <y>130</y>
-	 <w>20</w>
+	 <w>32</w>
 	 <h>32</h>
 	 <binding>
 		 <command>property-adjust</command>
-		 <property>/instrumentation/misc/jettison</property>
+		 <property>instrumentation/misc/jettison</property>
 		 <step>1</step>
 		 <min>0</min>
 		 <max>360</max>
@@ -98,7 +98,7 @@
 		<h>36</h>
 		<binding>
 			<command>property-adjust</command>
-			<property>/instrumentation/altimeter/setting-inhg</property>
+			<property>instrumentation/altimeter/setting-inhg</property>
 			<step>-0.01</step>
 			<min>26.0</min>
 			<max>33.0</max>
@@ -114,18 +114,238 @@
 	  <h>36</h>
 	  <binding>
 		  <command>property-adjust</command>
-		  <property>/instrumentation/altimeter/setting-inhg</property>
+		  <property>instrumentation/altimeter/setting-inhg</property>
 		  <step>0.01</step>
 		  <min>26.0</min>
 		  <max>33.0</max>
 		  <wrap>false</wrap>
 	  </binding>
+  </action>	
+	<!--+++++++++++++++  NAV +++++++++++++++++++++++-->
+	<action>
+		<name>TACAN Select</name>
+		<button>0</button>
+		<x>-225</x>
+		<y>00</y>
+		<w>25</w>
+		<h>20</h>
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/enav[0]/selected</property>
+			<value>3</value>
+		</binding>
+        </action>
+	<action>
+		<name>Nav1 Select</name>
+		<button>0</button>
+		<x>-200</x>
+		<y>00</y>
+		<w>27</w>
+		<h>20</h>
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/enav[0]/selected</property>
+			<value>0</value>
+		</binding>
+	</action>
+	<action>
+		<name>Nav2 Select</name>
+		<button>0</button>
+		<x>-173</x>
+		<y>00</y>
+		<w>28</w>
+		<h>20</h>
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/enav[0]/selected</property>
+			<value>1</value>
+		</binding>
+  </action>
+  <action>
+	  <name>Nav1+2 Select</name>
+	  <button>0</button>
+	  <x>-145</x>
+	  <y>00</y>
+	  <w>30</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/enav[0]/selected</property>
+		  <value>2</value>
+	  </binding>
   </action>
 
-	
-	
-	
-	<!--++++++++++++++++++++++++++++++++++++++-->
+  <!--+++++++++++++++  Radar +++++++++++++++++++++++-->
+  <action>
+	  <name>Menu Select</name>
+	  <button>0</button>
+	  <x>178</x>
+	  <y>20</y>
+	  <w>25</w>
+	  <h>25</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>0</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>Radar BoreSight Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <y>-55</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>1</value>
+	  </binding>
+  </action>  
+  <action>
+	  <name>Radar Search Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <y>-85</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>2</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>Radar AirToAir Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <y>-107</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>3</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>Radar AirToSurf Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <y>-135</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>4</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>range10select</name>
+	  <button>0</button>
+	  <x>139</x>
+	  <y>-160</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/range</property>
+		  <value>10</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>range20select</name>
+	  <button>0</button>
+	  <x>163</x>
+	  <y>-160</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/range</property>
+		  <value>20</value>
+	  </binding>	  
+  </action> 
+  <action>
+	  <name>range40select</name>
+	  <button>0</button>
+	  <x>186</x>
+	  <y>-160</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/range</property>
+		  <value>40</value>
+	  </binding>
+  </action> 
+  <!--+++++++++Panel Lighting++++++++++-->
+  <action>
+	  <name>PanelLightsDown</name>
+	  <button>0</button>
+	  <x>-340</x>
+	  <y>-20</y>
+	  <w>20</w>
+	  <h>25</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>sim/model/material/instruments/factor</property>
+		  <step>-0.2</step>
+		  <min>0</min>
+		  <max>1</max>
+		  <wrap>false</wrap>
+	  </binding>
+  </action> 
+  <action>
+	  <name>PanelLightsUp</name>
+	  <button>0</button>
+	  <x>-320</x>
+	  <y>-20</y>
+	  <w>20</w>
+	  <h>25</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>sim/model/material/instruments/factor</property>
+		  <step>0.2</step>
+		  <min>0</min>
+		  <max>1</max>
+		  <wrap>false</wrap>
+	  </binding>
+  </action>
+  <!--+++++++++Flaps ++++++++++-->
+  <action>
+	  <name>FlapsDown</name>
+	  <button>0</button>
+	  <x>-315</x>
+	  <y>10</y>
+	  <w>20</w>
+	  <h>25</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>controls/flight/flaps</property>
+		  <step>-0.2</step>
+		  <min>0</min>
+		  <max>1</max>
+		  <wrap>false</wrap>
+	  </binding>
+  </action> 
+  <action>
+	  <name>Flaps Up</name>
+	  <button>0</button>
+	  <x>-295</x>
+	  <y>10</y>
+	  <w>20</w>
+	  <h>25</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>controls/flight/flaps</property>
+		  <step>0.2</step>
+		  <min>0</min>
+		  <max>1</max>
+		  <wrap>false</wrap>
+	  </binding>
+  </action> 
  </actions>
 
   </instrument>

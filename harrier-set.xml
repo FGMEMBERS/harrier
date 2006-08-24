@@ -1,8 +1,205 @@
 <?xml version="1.0"?>
 
-<PropertyList include="harrier-yasim-set.xml">
+<PropertyList>
  <sim>
-  <description>Alias for harrier-yasim.</description>
+
+  <description>British Aerospace Harrier (YASim)</description>
   <author>Andy Ross(FDM), Steve Havlir(3d Model, Panel)</author>
+
+  <flight-model>yasim</flight-model>
+  <aero>harrier</aero>
+  
+  <fuel-fraction>0.5</fuel-fraction>
+  
+  <startup>
+	  <splash-texture>Aircraft/harrier/harrier-splash.rgb</splash-texture>
+  </startup>
+  
+  <sound>
+   <path>Aircraft/harrier/Sound/harrier-sound.xml</path>
+  </sound>  
+  
+  <hud>
+   <path n="1">Aircraft/harrier/Panel/Hud/NTPS.xml</path>
+   <visibility n="0" type="bool">false</visibility>
+   <visibility n="1" type="bool">true</visibility>
+   <current-color>0</current-color>
+   <color>
+	   <transparent type="bool">true</transparent>
+	   <antialiased type="bool">true</antialiased>
+	   <brightness type="float">1.0</brightness>
+	   <alpha type="float">0.70</alpha>
+   </color>
+   <palette>
+	   <color n="0">
+		   <red type="float">0.50</red>
+		   <green type="float">1.0</green>
+		   <blue type="float">0.00</blue>
+	   </color>
+	   <color n="1">
+		   <red type="float">1.0</red>
+		   <green type="float">0.0</green>
+		   <blue type="float">0.0</blue>
+	   </color>
+   </palette>
+  </hud>
+
+  <model>
+   <path>Aircraft/harrier/Models/harrier-model.xml</path>
+  </model>
+  
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+      <!-- x/y/z == right/up/back -->
+      <x-offset-m archive="y">0.00</x-offset-m>
+      <y-offset-m archive="y">0.68</y-offset-m>
+      <z-offset-m archive="y">3.98</z-offset-m>
+      <pitch-offset-deg archive="y">-11</pitch-offset-deg>
+    </config>
+  </view>
+  <view n="1">
+    <config>
+      <!-- x/y/z == right/up/back -->
+      <target-z-offset-m archive="y">8</target-z-offset-m>
+      <pitch-offset-deg archive="y">10</pitch-offset-deg>     
+    </config>
+  </view>  
+  <view n="2">
+     <config>
+       <!-- x/y/z == right/up/back -->
+       <target-z-offset-m archive="y">8</target-z-offset-m>
+       <pitch-offset-deg archive="y">10</pitch-offset-deg>     
+     </config>
+  </view>   
+  <view n="5">
+    <config>
+      <!-- x/y/z == right/up/back -->
+      <target-z-offset-m archive="y">8</target-z-offset-m>
+      <pitch-offset-deg archive="y">10</pitch-offset-deg>     
+    </config>
+  </view>  
+  
+  <help>
+   <title>British Aerospace Harrier</title>
+   <key>
+	   <name>m/M</name>
+	   <desc>Thrust Vector</desc>
+   </key>
+   <key>
+	   <name>Tab</name>
+	   <desc>Armament Selection</desc>
+   </key>
+   <key>
+	   <name>j/k</name>
+	   <desc>Decrease/Increase Air Brake</desc>
+   </key>
+   <text>
+Tips:
+____Horizontal Take Off____
+Disengage the parking brake. Keep the stick pulled back while steering down the runway.
+_____Vertical Take Off_____
+Set the thrust vector to about 75 degrees. When you have gained about a hundred feet in altitude and are stable, slowly decrease the thrust vector back down to 0.  As you pick up speed, your wings will keep you airborne.  Do not decrease the thrust vector too quickly.
+____Vertical Landing____
+This is very difficult. Increase the thrust vector to about 85 degrees fairly early. You may use greater than 90 degree thrust vector to slow down, but don't forget about it, or else you may end up flying backwards(bad!). Flaps and air brake are optional. As you lose speed, your wings will no longer be able to support your weight. Keep your hand close to the throttle, and if you ever feel yourself dropping like a rock, slam the throttle to 100% right away.  The slower you go, the more vertical thrust you will need.  Once you are under 100 kts, your throttle will remain at about 80% or above.  Find a good decent rate that isn't too fast and be patient. Right before you hit the ground, point the nose upwards to about 8 degrees to accomodate the front landing gear being longer.
+
+   </text>
+  </help>
+  <systems>
+     <autopilot>
+        <path>Aircraft/harrier/harrier-autopilot.xml</path>
+     </autopilot>
+   </systems>
  </sim>
+ 
+ <!-- set a few properties -->
+ <instrumentation>
+	<enav><selected type="int">4</selected></enav>
+	<radar>
+		<range type="int" archive="y">20</range>
+		<range-factor type="double" archive="n">0.001888</range-factor>
+		<minimized type="bool" archive="y">false</minimized>
+		<selected type="int">0</selected>
+	</radar>
+</instrumentation>
+
+<systems>
+	<equipment>
+		<Pylon1>
+			<object type="string">Sidewinder AAM</object>
+			<reset type="string">Sidewinder AAM</reset>
+			<weight-lbs>155.2</weight-lbs>
+		</Pylon1>
+		<Pylon2>
+			<object type="string">External Fuel Tanks</object>
+			<reset type="string">External Fuel Tanks</reset>
+			<weight-lbs>0</weight-lbs>		
+		</Pylon2>
+		<Pylon3>
+			<object type="string">none</object>
+			<reset type="string">none</reset>
+			<weight-lbs>0.00</weight-lbs>
+		</Pylon3>
+		<Pylon4>
+			<object type="string">External Fuel Tanks</object>
+			<weight-lbs>0</weight-lbs>		
+		</Pylon4>
+		<Pylon5>
+			<object type="string">Sidewinder AAM</object>
+			<weight-lbs>155.2</weight-lbs>
+		</Pylon5>
+		<GunPod1>
+			<object type="string">ADEN Cannons</object>
+			<reset type="string">ADEN Cannons</reset>
+			<weight-lbs>87</weight-lbs>
+		</GunPod1>
+		<GunPod2>
+			<object type="string">ADEN Cannons</object>
+			<weight-lbs>87</weight-lbs>
+		</GunPod2>
+		<AARBoom type="string">1</AARBoom>
+	</equipment>
+</systems>
+
+<!-- keyboard-->
+<input> 
+	<keyboard> 
+		<key n="9">
+			<name>Tab</name>
+			<desc>Show Equipment dialog</desc>
+			<binding>
+				<command>nasal</command>
+				<script>equipment.showDialog()</script>
+			</binding>
+		</key>
+		<key n="104">
+			<name>h</name>
+			<desc>toggle HUD</desc>
+			<binding>
+				<command>property-adjust</command>
+				<property>sim[0]/hud/visibility[1]</property>
+			</binding>
+		</key>
+						
+	</keyboard>
+</input>
+<!-- load nasal scripts -->
+  <nasal>
+    <aar> 
+      <file>Aircraft/harrier/harrierAAR.nas</file>
+    </aar>
+    <enav>
+      <file>Aircraft/harrier/Panel/enav/enav.nas</file>
+    </enav>
+    <radar>
+      <file>Aircraft/harrier/Panel/radar/radar.nas</file>
+    </radar>
+    <equipment>
+      <file>Aircraft/harrier/Models/equipment.nas</file>
+    </equipment>
+    <hud>
+      <file>Aircraft/harrier/Panel/Hud/hud.nas</file>
+    </hud>
+  </nasal>
+  
 </PropertyList>
