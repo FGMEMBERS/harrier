@@ -631,8 +631,8 @@
 		<condition>
 			<or>
 				<equals>
-					<property>/systems/equipment/AARBoom</property>
-					<value>1</value>
+					<property>/sim/weight[7]/selected</property>
+					<value>Refueling Boom Attached</value>
 				</equals>
 				<not>
 					<equals>

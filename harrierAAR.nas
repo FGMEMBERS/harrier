@@ -98,8 +98,8 @@ updateTanker = func {
         }
     }
 
-    hasAARBoom = getprop("systems/equipment/AARBoom");
-    if ( size(selectedTankers) >= 1 and hasAARBoom=="1"){
+    hasAARBoom = getprop("sim/weight[7]/selected") != "none";
+    if ( size(selectedTankers) >= 1 and hasAARBoom){
         Refueling.setBoolValue(1);
         addFuel();
     } else {

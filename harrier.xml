@@ -166,18 +166,19 @@
 <!-- This capacity is right, but I'm not sure what the tank
      configuration of the main tank is.  Just put it all at the wing
      root. -->
-<tank x="-7.32" y="0" z="0.5" jet="true" capacity="5049"/>
-<tank x="-7.22" y="0" z="-0.40" jet="true" capacity="2607"/>
-<tank x="-7.22" y="0" z="-0.40" jet="true" capacity="2607"/>
+<tank x="-7.32" y="0" z="0.5" jet="1" capacity="5049"/>
+<tank x="-7.22" y="0" z="-0.40" jet="1" capacity="2607"/>
+<tank x="-7.22" y="0" z="-0.40" jet="1" capacity="2607"/>
 
 <ballast x="-2" y="0" z="0" mass="600"/>
 
-<weight x="-7.32" y="-2.83" z="-0.60" size="0.18" mass-prop="systems/equipment/Pylon1/weight-lbs"/>
-<weight x="-7.60" y="-1.86" z="-0.40" size="0.18" mass-prop="systems/equipment/Pylon2/weight-lbs"/>
-<weight x="-7.90" y="0.00" z="-1.00" size="0.18" mass-prop="systems/equipment/Pylon3/weight-lbs"/>
-<weight x="-7.60" y="1.86" z="-0.40" size="0.18" mass-prop="systems/equipment/Pylon4/weight-lbs"/>
-<weight x="-7.32" y="2.83" z="-0.60" size="0.18" mass-prop="systems/equipment/Pylon5/weight-lbs"/>
-<weight x="-7.60" y="-0.60" z="-1.0" size="0.18" mass-prop="systems/equipment/GunPod1/weight-lbs"/>
-<weight x="-7.60" y="0.60" z="-1.0" size="0.18" mass-prop="systems/equipment/GunPod2/weight-lbs"/>
+<weight x="-7.32" y="-2.83" z="-0.60" size="0.18" mass-prop="sim/weight[0]/weight-lb"/>
+<weight x="-7.60" y="-1.86" z="-0.40" size="0.18" mass-prop="sim/weight[1]/weight-lb"/>
+<weight x="-7.60" y="-0.60" z="-1.0" size="0.18" mass-prop="sim/weight[2]/weight-lb"/>
+<weight x="-7.90" y="0.00" z="-1.00" size="0.18" mass-prop="sim/weight[3]/weight-lb"/>
+<weight x="-7.60" y="0.60" z="-1.0" size="0.18" mass-prop="sim/weight[4]/weight-lb"/>
+<weight x="-7.60" y="1.86" z="-0.40" size="0.18" mass-prop="sim/weight[5]/weight-lb"/>
+<weight x="-7.32" y="2.83" z="-0.60" size="0.18" mass-prop="sim/weight[6]/weight-lb"/>
+<weight x="-3.15" y="1.00" z="1.00" size="0.05" mass-prop="sim/weight[7]/weight-lb"/>
 
 </airplane>

@@ -238,8 +238,8 @@
 		<object-name>Sidewinder1</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon1/object</property>
-				<value>Sidewinder AAM</value>
+				<property>sim/weight[0]/selected</property>
+				<value>AIM-9L Sidewinder</value>
 			</equals>
 		</condition>
  	</animation>
@@ -248,8 +248,8 @@
 		<object-name>Sidewinder4</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon5/object</property>
-				<value>Sidewinder AAM</value>
+				<property>sim/weight[6]/selected</property>
+				<value>AIM-9L Sidewinder</value>
 			</equals>
 		</condition>
  	</animation>	
@@ -259,8 +259,8 @@
 		<object-name>LeftExTank</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon2/object</property>
-				<value>External Fuel Tanks</value>
+				<property>sim/weight[1]/selected</property>
+				<value>External Fuel Tank</value>
 			</equals>
 		</condition>
  	</animation>
@@ -269,8 +269,8 @@
 		<object-name>RightExTank</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon4/object</property>
-				<value>External Fuel Tanks</value>
+				<property>sim/weight[5]/selected</property>
+				<value>External Fuel Tank</value>
 			</equals>
 		</condition>
  	</animation>
@@ -279,8 +279,8 @@
 		<object-name>Sidewinder2</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon2/object</property>
-				<value>Sidewinder AAM</value>
+				<property>sim/weight[1]/selected</property>
+				<value>AIM-9L Sidewinder</value>
 			</equals>
 		</condition>
  	</animation>
@@ -289,8 +289,8 @@
 		<object-name>Sidewinder3</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon4/object</property>
-				<value>Sidewinder AAM</value>
+				<property>sim/weight[5]/selected</property>
+				<value>AIM-9L Sidewinder</value>
 			</equals>
 		</condition>
  	</animation>
@@ -299,7 +299,7 @@
 		<object-name>AMRAAM1</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon2/object</property>
+				<property>sim/weight[1]/selected</property>
 				<value>AIM-120 AMRAAM</value>
 			</equals>
 		</condition>
@@ -309,7 +309,7 @@
 		<object-name>AMRAAM4</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon4/object</property>
+				<property>sim/weight[5]/selected</property>
 				<value>AIM-120 AMRAAM</value>
 			</equals>
 		</condition>
@@ -319,8 +319,8 @@
 		<object-name>ALARM1</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon2/object</property>
-				<value>ALARM Anti-radar</value>
+				<property>sim/weight[1]/selected</property>
+				<value>ALARM Anti-radar Missile</value>
 			</equals>
 		</condition>
  	</animation>
@@ -329,8 +329,8 @@
 		<object-name>ALARM2</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon4/object</property>
-				<value>ALARM Anti-radar</value>
+				<property>sim/weight[5]/selected</property>
+				<value>ALARM Anti-radar Missile</value>
 			</equals>
 		</condition>
  	</animation>
@@ -339,8 +339,8 @@
 		<object-name>Left606LGB</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon2/object</property>
-				<value>606lb Paveway II Laser Guided Bombs</value>
+				<property>sim/weight[1]/selected</property>
+				<value>500lb Laser Guided Bomb</value>
 			</equals>
 		</condition>
 	</animation>
@@ -349,8 +349,8 @@
 		<object-name>Right606LGB</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon4/object</property>
-				<value>606lb Paveway II Laser Guided Bombs</value>
+				<property>sim/weight[5]/selected</property>
+				<value>500lb Laser Guided Bomb</value>
 			</equals>
 		</condition>
 	</animation>
@@ -361,8 +361,8 @@
 		<object-name>SeaEagle</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon3/object</property>
-				<value>Sea Eagle AShM</value>
+				<property>sim/weight[3]/selected</property>
+				<value>Sea Eagle Anti-ship Missile</value>
 			</equals>
 		</condition>
  	</animation>	
@@ -371,8 +371,8 @@
 		<object-name>1000LGB</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/Pylon3/object</property>
-				<value>1092lb Paveway II Laser Guided Bomb</value>
+				<property>sim/weight[3]/selected</property>
+				<value>1000lb Laser Guided Bomb</value>
 			</equals>
 		</condition>
  	</animation>	
@@ -382,12 +382,12 @@
 		<condition>   
 			<or>
 				<equals>
-					<property>systems/equipment/Pylon3/object</property>
-					<value>Sea Eagle AShM</value>
+					<property>sim/weight[3]/selected</property>
+					<value>Sea Eagle Anti-ship Missile</value>
 				</equals>
 				<equals>
-					<property>systems/equipment/Pylon3/object</property>
-					<value>1092lb Paveway II Laser Guided Bomb</value>
+					<property>sim/weight[3]/selected</property>
+					<value>1000lb Laser Guided Bomb</value>
 				</equals>
 			</or>
 		</condition>
@@ -398,8 +398,8 @@
 		<object-name>RAden</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/GunPod2/object</property>
-				<value>ADEN Cannons</value>
+				<property>sim/weight[4]/selected</property>
+				<value>ADEN Cannon</value>
 			</equals>
 		</condition>
  	</animation>
@@ -408,8 +408,8 @@
 		<object-name>LAden</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/GunPod1/object</property>
-				<value>ADEN Cannons</value>
+				<property>sim/weight[2]/selected</property>
+				<value>ADEN Cannon</value>
 			</equals>
 		</condition>
  	</animation>
@@ -419,7 +419,7 @@
 		<object-name>AMRAAM2</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/GunPod1/object</property>
+				<property>sim/weight[2]/selected</property>
 				<value>AIM-120 AMRAAM</value>
 			</equals>
 		</condition>
@@ -430,7 +430,7 @@
 		<object-name>AMRAAM3</object-name>
 		<condition>   
 			<equals>
-				<property>systems/equipment/GunPod2/object</property>
+				<property>sim/weight[4]/selected</property>
 				<value>AIM-120 AMRAAM</value>
 			</equals>
 		</condition>
