@@ -87,10 +87,6 @@
 	<desc>Thrust Vector</desc>
       </key>
       <key>
-	<name>Tab</name>
-	<desc>Armament Selection</desc>
-      </key>
-      <key>
 	<name>j/k</name>
 	<desc>Decrease/Increase Air Brake</desc>
       </key>
@@ -112,14 +108,17 @@
     </systems>
 
     <weight n="0">
-      <name>Left Wingtip</name>
+      <name>Left Outboard</name>
       <weight-lb>0</weight-lb>
       <selected>none</selected>
       <opt><name>none</name><lbs>0</lbs></opt>
-      <opt><name>AIM-9L Sidewinder</name><lbs>155.2</lbs></opt>
+      <opt><name>AIM-9L Sidewinder</name>   <lbs>155.2</lbs></opt>
+      <opt><name>2x AIM-9L Sidewinder</name><lbs>330</lbs></opt>
+      <opt><name>AIM-120 AMRAAM</name>      <lbs>335</lbs></opt>
     </weight>
     <weight n="1">
-      <name>Left Wingroot</name>
+      <name>Left Inboard</name>
+      <tank>1</tank> <!-- FDM tank index on this pylon -->
       <weight-lb>0</weight-lb>
       <selected>none</selected>
       <opt><name>none</name>                          <lbs>0</lbs>  </opt>
@@ -127,17 +126,22 @@
       <opt><name>AIM-120 AMRAAM</name>              <lbs>335</lbs>  </opt>
       <opt><name>ALARM Anti-radar Missile</name>    <lbs>590</lbs>  </opt>
       <opt><name>500lb Laser Guided Bomb</name>     <lbs>606</lbs>  </opt>
-      <opt><name>External Fuel Tank</name>          <lbs>190</lbs>  </opt>
+      <opt>
+	<name>190 Gallon Fuel Tank</name>
+        <lbs>150</lbs>
+	<gals>230</gals>
+      </opt>
     </weight>
     <weight n="2">
-      <name>Left Gun Pod</name>
+      <name>Left Fuselage</name>
       <weight-lb>0</weight-lb>
       <selected>none</selected>
       <opt><name>none</name>                          <lbs>0</lbs>  </opt>
-      <opt><name>ADEN Cannon</name>                  <lbs>87</lbs>  </opt>
+      <opt><name>ADEN 30mm Cannon</name>                 <lbs>192</lbs>  </opt>
+      <opt><name>AIM-120 AMRAAM</name>              <lbs>335</lbs>  </opt>
     </weight>
     <weight n="3">
-      <name>Centerline</name>
+      <name>Center Fuselage</name>
       <weight-lb>0</weight-lb>
       <selected>none</selected>
       <opt><name>none</name>                          <lbs>0</lbs>  </opt>
@@ -145,14 +149,16 @@
       <opt><name>Sea Eagle Anti-ship Missile</name><lbs>1323</lbs>  </opt>
     </weight>
     <weight n="4">
-      <name>Right Gun Pod</name>
+      <name>Right Fuselage</name>
       <weight-lb>0</weight-lb>
       <selected>none</selected>
-      <opt><name>none</name>                          <lbs>0</lbs>  </opt>
-      <opt><name>ADEN Cannon</name>                  <lbs>87</lbs>  </opt>
+      <opt><name>none</name>                         <lbs>0</lbs>  </opt>
+      <opt><name>ADEN 30mm Cannon</name>           <lbs>192</lbs>  </opt>
+      <opt><name>AIM-120 AMRAAM</name>             <lbs>335</lbs>  </opt>
     </weight>
     <weight n="5">
-      <name>Right Wingroot</name>
+      <name>Right Inboard</name>
+      <tank>2</tank> <!-- FDM tank index on this pylon -->
       <weight-lb>0</weight-lb>
       <selected>none</selected>
       <opt><name>none</name>                          <lbs>0</lbs>  </opt>
@@ -160,14 +166,20 @@
       <opt><name>AIM-120 AMRAAM</name>              <lbs>335</lbs>  </opt>
       <opt><name>ALARM Anti-radar Missile</name>    <lbs>590</lbs>  </opt>
       <opt><name>500lb Laser Guided Bomb</name>     <lbs>606</lbs>  </opt>
-      <opt><name>External Fuel Tank</name>          <lbs>190</lbs>  </opt>
+      <opt>
+	<name>190 Gallon Fuel Tank</name>
+        <lbs>150</lbs>
+	<gals>230</gals>
+      </opt>
     </weight>
     <weight n="6">
-      <name>Right Wingtip</name>
+      <name>Right Outboard</name>
       <weight-lb>0</weight-lb>
       <selected>none</selected>
       <opt><name>none</name><lbs>0</lbs></opt>
       <opt><name>AIM-9L Sidewinder</name><lbs>155.2</lbs></opt>
+      <opt><name>2x AIM-9L Sidewinder</name><lbs>330</lbs></opt>
+      <opt><name>AIM-120 AMRAAM</name>      <lbs>335</lbs></opt>
     </weight>
     <weight n="7">
       <name>Refueling Boom</name>

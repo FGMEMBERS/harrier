@@ -167,8 +167,11 @@
      configuration of the main tank is.  Just put it all at the wing
      root. -->
 <tank x="-7.32" y="0" z="0.5" jet="1" capacity="5049"/>
-<tank x="-7.22" y="0" z="-0.40" jet="1" capacity="2607"/>
-<tank x="-7.22" y="0" z="-0.40" jet="1" capacity="2607"/>
+
+<!-- Two 190 gallon (imperial, not US, one assumes) tanks on the
+     inboard pylons -->
+<tank x="-7.22" y="1.8" z="-0.40" jet="1" capacity="1545"/>
+<tank x="-7.22" y="-1.8" z="-0.40" jet="1" capacity="1545"/>
 
 <ballast x="-2" y="0" z="0" mass="600"/>
 

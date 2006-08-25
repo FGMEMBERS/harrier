@@ -260,7 +260,7 @@
 		<condition>   
 			<equals>
 				<property>sim/weight[1]/selected</property>
-				<value>External Fuel Tank</value>
+				<value>190 Gallon Fuel Tank</value>
 			</equals>
 		</condition>
  	</animation>
@@ -270,7 +270,7 @@
 		<condition>   
 			<equals>
 				<property>sim/weight[5]/selected</property>
-				<value>External Fuel Tank</value>
+				<value>190 Gallon Fuel Tank</value>
 			</equals>
 		</condition>
  	</animation>
@@ -399,7 +399,7 @@
 		<condition>   
 			<equals>
 				<property>sim/weight[4]/selected</property>
-				<value>ADEN Cannon</value>
+				<value>ADEN 30mm Cannon</value>
 			</equals>
 		</condition>
  	</animation>
@@ -409,7 +409,7 @@
 		<condition>   
 			<equals>
 				<property>sim/weight[2]/selected</property>
-				<value>ADEN Cannon</value>
+				<value>ADEN 30mm Cannon</value>
 			</equals>
 		</condition>
  	</animation>
