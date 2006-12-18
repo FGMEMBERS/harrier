@@ -42,6 +42,46 @@
  </animation>
  <animation>
 	 <type>select</type>
+	 <object-name>rose</object-name>
+	 <object-name>tacandme</object-name>
+	 <object-name>tacandme4</object-name>
+	 <object-name>tacandme3</object-name>	 
+	 <object-name>tacandme2</object-name>
+	 <object-name>tacandme1</object-name>
+	 <object-name>tacanlabel</object-name>
+	 <object-name>hdglabel</object-name>
+	 <object-name>hdg3</object-name>
+	 <object-name>hdg2</object-name>
+	 <object-name>hdg1</object-name>
+	 <object-name>gsindex</object-name> 
+	 <object-name>navidr4</object-name>	 
+	 <object-name>navidr3</object-name>
+	 <object-name>navidr2</object-name>	 
+	 <object-name>navidr1</object-name>
+	 <object-name>dmerlabel</object-name>
+	 <object-name>navidl4</object-name>	 
+	 <object-name>navidl3</object-name>
+	 <object-name>navidl2</object-name>	 
+	 <object-name>navidl1</object-name>
+	 <object-name>dmellabel</object-name> 
+	 <object-name>dmel4</object-name> 
+	 <object-name>dmel3</object-name> 
+	 <object-name>dmel2</object-name> 
+	 <object-name>dmel1</object-name> 
+	 <object-name>bug</object-name>
+	 <condition>
+		 <not>
+		 	<equals>
+				 <property>instrumentation/enav[0]/selected</property>
+			 	<value>4</value>
+		 	</equals>
+		</not>
+	 </condition>
+ </animation>
+ 
+ 
+ <animation>
+	 <type>select</type>
 	 <object-name>gsarrow</object-name>
 	 <object-name>locindex</object-name>
 	 <object-name>arrow1</object-name>
@@ -126,6 +166,12 @@
   <object-name>vorllabel</object-name>
   <condition>
   <and>
+    <not>
+      <equals>
+        <property>instrumentation/enav[0]/selected</property>
+          <value>4</value>
+      </equals>
+    </not>
     <equals>
       <property>instrumentation/nav[0]/nav-loc</property>
       <value>false</value>
@@ -140,6 +186,12 @@
   <object-name>vorrlabel</object-name>
   <condition>
   <and>
+    <not>
+      <equals>
+        <property>instrumentation/enav[0]/selected</property>
+        <value>4</value>
+      </equals>
+    </not>
     <equals>
       <property>instrumentation/nav[1]/nav-loc</property>
       <value>false</value>
@@ -154,6 +206,12 @@
   <object-name>ilsllabel</object-name>
   <condition>
   <and>
+    <not>
+      <equals>
+        <property>instrumentation/enav[0]/selected</property>
+        <value>4</value>
+      </equals>
+    </not>  
     <property>instrumentation/nav[0]/nav-loc</property>
     <property>instrumentation/nav[0]/in-range</property>
   </and>
@@ -165,6 +223,12 @@
   <object-name>ilsrlabel</object-name>
   <condition>
   <and>
+    <not>
+      <equals>
+        <property>instrumentation/enav[0]/selected</property>
+        <value>4</value>
+      </equals>
+    </not>  
     <property>instrumentation/nav[1]/nav-loc</property>
     <property>instrumentation/nav[1]/in-range</property>
   </and>

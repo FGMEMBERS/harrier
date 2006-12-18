@@ -170,10 +170,10 @@
 
 <!-- Two 190 gallon (imperial, not US, one assumes) tanks on the
      inboard pylons -->
-<tank x="-7.22" y="1.8" z="-0.40" jet="1" capacity="1545"/>
-<tank x="-7.22" y="-1.8" z="-0.40" jet="1" capacity="1545"/>
+<tank x="-7.32" y="1.8" z="-0.40" jet="1" capacity="1545"/>
+<tank x="-7.32" y="-1.8" z="-0.40" jet="1" capacity="1545"/>
 
-<ballast x="-2" y="0" z="0" mass="600"/>
+<ballast x="0" y="0" z="0" mass="600"/>
 
 <weight x="-7.32" y="-2.83" z="-0.60" size="0.18" mass-prop="sim/weight[0]/weight-lb"/>
 <weight x="-7.60" y="-1.86" z="-0.40" size="0.18" mass-prop="sim/weight[1]/weight-lb"/>
