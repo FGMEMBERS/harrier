@@ -72,6 +72,20 @@
 	<pitch-offset-deg archive="y">10</pitch-offset-deg>     
       </config>
     </view>   
+    <view n="3">
+      <config>
+	<!-- x/y/z == right/up/back -->
+	<target-z-offset-m archive="y">8</target-z-offset-m>
+	<pitch-offset-deg archive="y">10</pitch-offset-deg>     
+      </config>
+    </view>   
+    <view n="4">
+      <config>
+	<!-- x/y/z == right/up/back -->
+	<target-z-offset-m archive="y">8</target-z-offset-m>
+	<pitch-offset-deg archive="y">10</pitch-offset-deg>     
+      </config>
+    </view>   
     <view n="5">
       <config>
 	<!-- x/y/z == right/up/back -->
@@ -79,6 +93,13 @@
 	<pitch-offset-deg archive="y">10</pitch-offset-deg>     
       </config>
     </view>  
+    <view n="6">
+      <config>
+	<!-- x/y/z == right/up/back -->
+	<target-z-offset-m archive="y">8</target-z-offset-m>
+	<pitch-offset-deg archive="y">10</pitch-offset-deg>     
+      </config>
+    </view>   
     
     <help>
       <title>British Aerospace Harrier</title>
