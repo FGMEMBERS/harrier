@@ -222,6 +222,11 @@
       <selected type="int">0</selected>
     </radar>
   </instrumentation>
+  <systems>
+    <refuel>
+      <serviceable type="bool">false</serviceable>
+    </refuel>
+  </systems>
 
   <!-- keyboard-->
   <input> 
@@ -255,8 +260,11 @@
   <!-- load nasal scripts -->
   <nasal>
     <aar> 
-      <file>Aircraft/harrier/harrierAAR.nas</file>
+      <file>Aircraft/Generic/aar.nas</file>
     </aar>
+    <controls> 
+      <file>Aircraft/harrier/controls.nas</file>
+    </controls>
     <enav>
       <file>Aircraft/harrier/Panel/enav/enav.nas</file>
     </enav>
