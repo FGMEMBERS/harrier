@@ -24,7 +24,7 @@ MPradarProperties = func {
       append(targetList,d);
    }
    foreach (m; targetList) {
-      string = "instrumentation/radar/ai/models/"~m.getName()~"["~m.getIndex()~"]/";
+      var string = "instrumentation/radar/ai/models/"~m.getName()~"["~m.getIndex()~"]/";
       if (getprop(string,"joined")==1 or m.getName()=="aircraft") {
          factor = getprop("instrumentation/radar/range-factor");
          setprop(string,"radar/y-shift",m.getNode("radar/y-shift").getValue() * factor);
@@ -88,8 +88,8 @@ boreSightLock = func {
       }
 
       foreach (m; targetList) {
-          string = "instrumentation/radar/ai/models/"~m.getName()~"["~m.getIndex()~"]";
-          string1 = "ai/models/"~m.getName()~"["~m.getIndex()~"]";
+          var string = "instrumentation/radar/ai/models/"~m.getName()~"["~m.getIndex()~"]";
+          var string1 = "ai/models/"~m.getName()~"["~m.getIndex()~"]";
           if (getprop(string1~"radar/in-range")) {
 
             hOffset = getprop(string1~"radar/h-offset");
