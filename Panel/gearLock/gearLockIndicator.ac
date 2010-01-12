@@ -1,8 +1,8 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5 shi 64  trans 0
-MATERIAL "RedLED" rgb 1 0 0 amb 0.5 0.5 0.5 emis 1 0 0 spec 1 1 1 shi 72 trans 0.281317
-MATERIAL "GreenLED" rgb 0 1 0 amb 0.5 0.5 0.5 emis 0 1 0 spec 1 1 1 shi 72 trans 0.256854
-MATERIAL "BG" rgb 0.096599 0.077551 0.077551 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 72 trans 0
+MATERIAL "RedLED" rgb 1 0 0 amb 1 0 0 emis 1 0 0 spec 1 1 1 shi 72 trans 0.281317
+MATERIAL "GreenLED" rgb 0 1 0 amb 0 1 0 emis 0 1 0 spec 1 1 1 shi 72 trans 0.256854
+MATERIAL "BG" rgb 0.096599 0.077551 0.077551 amb 0.096599 0.077551 0.077551 emis 0 0 0 spec 0.5 0.5 0.5 shi 72 trans 0
 OBJECT world
 kids 9
 OBJECT poly

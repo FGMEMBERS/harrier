@@ -164,6 +164,7 @@
 
     <stall>
       <name>stall</name>
+      <type>avionics</type>
       <path>Sounds/stall.wav</path>
       <property>sim/alarms/stall-warning</property>
       <volume>
@@ -241,11 +242,22 @@
         <max>1.0</max>
       </volume>
     </rumble>
-
-    <!-- no binding yet?
+	
+    <guns> 
+        <name>gunfire</name>
+        <mode>looped</mode>
+        <path>Aircraft/harrier/Sound/guns.wav</path>
+        <condition> 
+          <property>controls/armament/trigger</property>
+        </condition>
+        <volume>
+          <max>0.8</max>
+        </volume>
+      </guns>
+<!-- no binding yet?
   <click>
    <name>click</name>
-   <path>Sounds/click.wav</path>
+   <path>Aircraft/harrier/Sound/click.wav</path>
   </click>
 -->
 

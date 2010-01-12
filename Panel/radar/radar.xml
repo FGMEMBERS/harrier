@@ -12,7 +12,7 @@
 		 <green>0.05</green>
 		 <blue>0.0</blue>
 		 <factor-prop>sim/model/material/instruments/factor</factor-prop>
-	 </emission>
+	 </emission> 
  </animation>
  
  <animation>

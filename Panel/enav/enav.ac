@@ -1,10 +1,10 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5 shi 64  trans 0
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 72 trans 0
-MATERIAL "buttons" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 72 trans 0
-MATERIAL "black" rgb 0.23057 0.23057 0.23057 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 72 trans 0
-MATERIAL "glow" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 1 0 spec 0.502 0.502 0.502 shi 72 trans 0
-MATERIAL "dkgreen" rgb 0 0.234838 0.034812 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 72 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0 shi 64  trans 0
+MATERIAL "ac3dmat1" rgb 0.722 0.722 0.722  amb 0.722 0.722 0.722  emis 0 0 0  spec 1 1 1  shi 72  trans 0
+MATERIAL "ac3dmat1" rgb 0.722 0.722 0.722  amb 0.722 0.722 0.722  emis 0 0 0  spec 1 1 1  shi 72  trans 0
+MATERIAL "8-Aluminum.003" rgb 0.67714 0.67714 0.67714 amb 0.67714 0.67714 0.67714 emis 0 0 0 spec 1 1 1 shi 72 trans 0
+MATERIAL "glow" rgb 1 1 1 amb 1 1 1 emis 0 1 0 spec 0.502 0.502 0.502 shi 72 trans 0
+MATERIAL "dkgreen" rgb 0 0.234838 0.034812 amb 0 0.234838 0.034812 emis 0 0 0 spec 1 1 1 shi 72 trans 0
 OBJECT world
 kids 88
 OBJECT poly
@@ -1241,6 +1241,7 @@ refs 4
 kids 0
 OBJECT poly
 name "navBase"
+texture "dark_brushed.png"
 numvert 96
 0 0.043957 -0.05134
 0 0.040772 -0.053654
