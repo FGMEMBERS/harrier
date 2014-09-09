@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+
+	<!--back-->
+	<!--right -->
+	<!--up -->
+	
+	<!-- External Tanks -->
+	<model>
+		<name>LeftExTank</name>
+		<path>Aircraft/harrier/Models/exTank.ac</path>
+		<offsets>
+			<x-m>-11.2</x-m>
+			<y-m>-1.87</y-m>
+			<z-m>-6.2</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<model>
+		<name>RightExTank</name>
+		<path>Aircraft/harrier/Models/exTank.ac</path>
+		<offsets>
+			<x-m>-11.2</x-m>
+			<y-m>1.87</y-m>
+			<z-m>-6.2</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+	
+	<!-- ADEN Pods -->	
+	<model>
+		<name>RAden</name>
+		<path>Aircraft/harrier/Models/ADENpod.ac</path>
+			<offsets>
+			<x-m>-12.5</x-m>
+			<y-m>0.52</y-m>
+			<z-m>-6.7</z-m>
+			<roll-deg>27</roll-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>LAden</name>
+		<path>Aircraft/harrier/Models/ADENpod.ac</path>
+		<offsets>
+			<x-m>-12.5</x-m>
+			<y-m>-0.52</y-m>
+			<z-m>-6.7</z-m>
+			<roll-deg>-27</roll-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>RGunPylon</name>
+		<path>Aircraft/harrier/Models/optionalPylon.ac</path>
+		<offsets>
+			<x-m>-12.5</x-m>
+			<y-m>0.52</y-m>
+			<z-m>-6.7</z-m>
+			<roll-deg>27</roll-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>LGunPylon</name>
+		<path>Aircraft/harrier/Models/optionalPylon.ac</path>
+		<offsets>
+			<x-m>-12.5</x-m>
+			<y-m>-0.52</y-m>
+			<z-m>-6.7</z-m>
+			<roll-deg>-27</roll-deg>
+		</offsets>
+	</model>
+	
+	<!-- Sidewinder -->	
+	<model>
+		<name>Sidewinder1</name>
+		<path>Aircraft/harrier/Models/aim9LM.ac</path>
+		<offsets>
+			<x-m>-10.9</x-m>
+			<y-m>-2.84</y-m>
+			<z-m>-6.2</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<model>
+		<name>Sidewinder4</name>
+		<path>Aircraft/harrier/Models/aim9LM.ac</path>
+		<offsets>
+			<x-m>-10.9</x-m>
+			<y-m>2.84</y-m>
+			<z-m>-6.2</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<model>
+		<name>Sidewinder2</name>
+		<path>Aircraft/harrier/Models/aim9LM.ac</path>
+		<offsets>
+			<x-m>-11.5</x-m>
+			<y-m>-1.87</y-m>
+			<z-m>-6.0</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<model>
+		<name>Sidewinder3</name>
+		<path>Aircraft/harrier/Models/aim9LM.ac</path>
+		<offsets>
+			<x-m>-11.5</x-m>
+			<y-m>1.87</y-m>
+			<z-m>-6.0</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<!-- AIM-120 AMRAAM -->
+	<model>
+		<name>AMRAAM1</name>
+		<path>Aircraft/harrier/Models/aim120.ac</path>
+		<offsets>
+			<x-m>-11.2</x-m>
+			<y-m>-1.87</y-m>
+			<z-m>-6.08</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>AMRAAM2</name>
+		<path>Aircraft/harrier/Models/aim120.ac</path>
+		<offsets>
+			<x-m>-12.75</x-m>
+			<y-m>-0.59</y-m>
+			<z-m>-6.85</z-m>
+			<roll-deg>-20</roll-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>AMRAAM3</name>
+		<path>Aircraft/harrier/Models/aim120.ac</path>
+		<offsets>
+			<x-m>-12.75</x-m>
+			<y-m>0.59</y-m>
+			<z-m>-6.85</z-m>
+			<roll-deg>20</roll-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>AMRAAM4</name>
+		<path>Aircraft/harrier/Models/aim120.ac</path>
+		<offsets>
+			<x-m>-11.2</x-m>
+			<y-m>1.87</y-m>
+			<z-m>-6.08</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+	<!-- ALARM Anti-radar -->
+	<model>
+		<name>ALARM1</name>
+		<path>Aircraft/harrier/Models/baeAlarm.ac</path>
+		<offsets>
+			<x-m>-11.2</x-m>
+			<y-m>-1.87</y-m>
+			<z-m>-6.08</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>ALARM2</name>
+		<path>Aircraft/harrier/Models/baeAlarm.ac</path>
+		<offsets>
+			<x-m>-11.2</x-m>
+			<y-m>1.87</y-m>
+			<z-m>-6.08</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<!-- Sea Eagle -->
+	<model>
+		<name>SeaEagle</name>
+		<path>Aircraft/harrier/Models/seaEagle.ac</path>
+		<offsets>
+			<x-m>-12.25</x-m>
+			<y-m>0</y-m>
+			<z-m>-6.9</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+	
+	<!-- LGB's -->	
+	<model>
+		<name>1000LGB</name>
+		<path>Aircraft/harrier/Models/GBU16B.ac</path>
+		<offsets>
+			<x-m>-12.2</x-m>
+			<y-m>0</y-m>
+			<z-m>-6.8</z-m>
+			<roll-deg>0</roll-deg>
+		</offsets>
+	</model>
+	<model>
+		<name>Left606LGB</name>
+		<path>Aircraft/harrier/Models/GBU12B.ac</path>
+		<offsets>
+			<x-m>-11.6</x-m>
+			<y-m>-1.87</y-m>
+			<z-m>-6.1</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<model>
+		<name>Right606LGB</name>
+		<path>Aircraft/harrier/Models/GBU12B.ac</path>
+		<offsets>
+			<x-m>-11.6</x-m>
+			<y-m>1.87</y-m>
+			<z-m>-6.1</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+	<!-- fuselage pylon -->
+	<model>
+		<name>FuselagePylon</name>
+		<path>Aircraft/harrier/Models/optionalPylon.ac</path>
+		<offsets>
+			<x-m>-12.2</x-m>
+			<y-m>0</y-m>
+			<z-m>-6.7</z-m>
+			<roll-deg>0</roll-deg>
+		</offsets>
+	</model>
+	
+	
+	<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+	<!--++++++++++++  ANIMATIONS  +++++++++++++++++++-->
+	<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+	<!-- Pylons 1 and 5 -->
+	<animation>
+		<type>select</type>
+		<object-name>Sidewinder1</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[0]/selected</property>
+				<value>AIM-9L Sidewinder</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>Sidewinder4</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[6]/selected</property>
+				<value>AIM-9L Sidewinder</value>
+			</equals>
+		</condition>
+ 	</animation>	
+	<!-- PYLONS 2 and 4 -->
+	<animation>
+		<type>select</type>
+		<object-name>LeftExTank</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[1]/selected</property>
+				<value>190 Gallon Fuel Tank</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>RightExTank</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[5]/selected</property>
+				<value>190 Gallon Fuel Tank</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>Sidewinder2</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[1]/selected</property>
+				<value>AIM-9L Sidewinder</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>Sidewinder3</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[5]/selected</property>
+				<value>AIM-9L Sidewinder</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>AMRAAM1</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[1]/selected</property>
+				<value>AIM-120 AMRAAM</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>AMRAAM4</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[5]/selected</property>
+				<value>AIM-120 AMRAAM</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>ALARM1</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[1]/selected</property>
+				<value>ALARM Anti-radar Missile</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>ALARM2</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[5]/selected</property>
+				<value>ALARM Anti-radar Missile</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>Left606LGB</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[1]/selected</property>
+				<value>500lb Laser Guided Bomb</value>
+			</equals>
+		</condition>
+	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>Right606LGB</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[5]/selected</property>
+				<value>500lb Laser Guided Bomb</value>
+			</equals>
+		</condition>
+	</animation>
+	
+	<!-- PYLON 3 -->
+	<animation>
+		<type>select</type>
+		<object-name>SeaEagle</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[3]/selected</property>
+				<value>Sea Eagle Anti-ship Missile</value>
+			</equals>
+		</condition>
+ 	</animation>	
+	<animation>
+		<type>select</type>
+		<object-name>1000LGB</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[3]/selected</property>
+				<value>1000lb Laser Guided Bomb</value>
+			</equals>
+		</condition>
+ 	</animation>	
+	<animation>
+		<type>select</type>
+		<object-name>FuselagePylon</object-name>
+		<condition>   
+			<or>
+				<equals>
+					<property>sim/weight[3]/selected</property>
+					<value>Sea Eagle Anti-ship Missile</value>
+				</equals>
+				<equals>
+					<property>sim/weight[3]/selected</property>
+					<value>1000lb Laser Guided Bomb</value>
+				</equals>
+			</or>
+		</condition>
+ 	</animation>
+	<!-- GUN PODS -->
+	<animation>
+		<type>select</type>
+		<object-name>RAden</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[4]/selected</property>
+				<value>ADEN 30mm Cannon</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>LAden</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[2]/selected</property>
+				<value>ADEN 30mm Cannon</value>
+			</equals>
+		</condition>
+ 	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>LGunPylon</object-name>
+		<object-name>AMRAAM2</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[2]/selected</property>
+				<value>AIM-120 AMRAAM</value>
+			</equals>
+		</condition>
+ 	</animation>	
+	<animation>
+		<type>select</type>
+		<object-name>RGunPylon</object-name>
+		<object-name>AMRAAM3</object-name>
+		<condition>   
+			<equals>
+				<property>sim/weight[4]/selected</property>
+				<value>AIM-120 AMRAAM</value>
+			</equals>
+		</condition>
+ 	</animation>
+</PropertyList>
