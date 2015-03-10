@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<fx>
+
+<!-- External Sounds -->
+ 
+ <engine>
+      <name>engine</name>
+      <path>Sounds/jet.wav</path>
+      <mode>looped</mode>
+      <property>engines/engine/running</property>
+      <volume>
+        <property>engines/engine/prop-thrust</property>
+        <type>lin</type>
+        <factor>0.0002353</factor>
+        <!-- Scales to 0-2 for 8500lb engine -->
+      </volume>
+    </engine>
+
+    <engine>
+      <name>whine</name>
+      <path>Aircraft/harrier/Sound/whine.wav</path>
+      <mode>looped</mode>
+      <property>engines/engine/running</property>
+      <pitch>
+        <property>engines/engine/n1</property>
+        <type>lin</type>
+        <factor>.008</factor>
+      </pitch>
+      <volume>
+        <property>engines/engine/n1</property>
+        <type>log</type>
+        <factor>0.1</factor>
+        <!-- 10-100% rpm == 0.1 - 1 factor -->
+      </volume>
+    </engine>
+	
+	<squeal>
+      <name>squeal</name>
+      <path>Sounds/squeal.wav</path>
+      <condition>
+        <or>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>velocities/speed-down-fps</property>
+        <factor>0.05</factor>
+      </volume>
+      <volume>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+      </volume>
+      <volume>
+        <internal>dt_stop</internal>
+        <factor>0.05</factor>
+        <max>1.0</max>
+      </volume>
+      <pitch>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <offset>1.2</offset>
+      </pitch>
+    </squeal>
+	
+	<guns> 
+        <name>gunfire</name>
+        <mode>looped</mode>
+        <path>Aircraft/harrier/Sound/guns.wav</path>
+        <condition> 
+          <property>controls/armament/trigger</property>
+        </condition>
+        <volume>
+          <max>0.8</max>
+        </volume>
+      </guns>
+	
+<!-- flyby -->
+		<flyby>
+			<name>fly-by</name>
+			<mode>once</mode>
+			<path>Aircraft/harrier/Sound/flyby.wav</path>
+			<condition>
+				<equals>
+					<property>sim/current-view/view-number</property>
+					<value>6</value>
+				</equals>
+				<not>
+         	<property>/sim/current-view/internal</property>
+	 	<property>/engines/engine/out-of-fuel</property>
+     	</not>
+		</condition>
+			<volume>
+				<property>velocities/airspeed-kt</property>
+				<factor>0.001</factor>
+			</volume>
+			
+		</flyby>
+
+
+ </fx>
+
+
+</PropertyList>

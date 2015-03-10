@@ -282,7 +282,6 @@
   </bank-input>
   <sideslip-input>
    <property>/orientation/side-slip-deg</property>
-   <scale>-1.0</scale> <!-- change in side-slip sign as reported by yasim, see bug #901 -->
   </sideslip-input>
   <bank-scale>true</bank-scale>
   <option>bottom</option>

@@ -10,7 +10,165 @@
 		<z-m>5.90</z-m>
 		<pitch-deg>0.0</pitch-deg>
 	</offsets>
+	
+		<!-- MP sound call -->
+  <sound><path>Aircraft/harrier/Sound/mp-sound.xml</path></sound>
+	
+<nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/harrier/Models/Liveries", 10);
 
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+	
+	
+<!-- START Livery select animation code -->
+
+       <animation>
+           <type>material</type>
+          <object-name>Fuselage.002</object-name>
+          <object-name>Fuselage.001</object-name>
+          <object-name>intakeDoor</object-name>
+          <object-name>NoseCone.001</object-name>
+          <object-name>LWingBottom.001</object-name>
+          <object-name>LWingTop.001</object-name>
+          <object-name>RWingTop.001</object-name>
+          <object-name>RWingBottom.001</object-name>
+          <object-name>VertStabilizer.002</object-name>
+          <object-name>RWingBottom</object-name>
+          <object-name>RWingTop</object-name>
+          <object-name>LWingTop</object-name>
+          <object-name>LWingBottom</object-name>
+          <object-name>RelevatorTop</object-name>
+          <object-name>RelevatorBottom</object-name>
+          <object-name>LelevatorBottom</object-name>
+          <object-name>LelevatorTop</object-name>
+          <object-name>VertStabilizer</object-name>
+          <object-name>Fuselage</object-name>
+          <object-name>NoseCone</object-name>
+		  <object-name>Arch</object-name>
+		  <object-name>Canopy</object-name>
+		  
+          <property-base>sim/model/livery</property-base>
+           <texture-prop>texture</texture-prop>
+           <texture>harrier.png</texture>
+       </animation>
+
+       <animation>
+           <type>material</type>
+           <object-name>Fuselage.002</object-name>
+           <object-name>Fuselage.001</object-name>
+	   <object-name>Fuselage</object-name>
+           <property-base>sim/model/livery</property-base>
+           <texture-prop>texture</texture-prop>
+           <texture>harrier.png</texture>
+       </animation>
+
+       <animation>
+           <type>material</type>
+           <object-name>intakeDoor</object-name>
+           <property-base>sim/model/livery</property-base>
+           <texture-prop>texture</texture-prop>
+           <texture>harrier.png</texture>
+       </animation>
+
+       <animation>
+           <type>material</type>
+           <object-name>NoseCone.001</object-name>
+           <object-name>NoseCone</object-name>
+           <property-base>sim/model/livery</property-base>
+           <texture-prop>texture</texture-prop>
+           <texture>harrier.png</texture>
+       </animation>
+
+       <animation>
+           <type>material</type>
+           <object-name>LWingBottom.001</object-name>
+           <object-name>LWingTop.001</object-name>
+           <object-name>RWingTop.001</object-name>
+           <object-name>RWingBottom.001</object-name>
+           <object-name>RWingBottom</object-name>
+           <object-name>RWingTop</object-name>
+           <object-name>LWingTop</object-name>
+           <object-name>LWingBottom</object-name>
+           <property-base>sim/model/livery</property-base>
+           <texture-prop>texture</texture-prop>
+           <texture>harrier.png</texture>
+       </animation>
+
+       <animation>
+           <type>material</type>
+           <object-name>VertStabilizer.002</object-name>
+           <object-name>VertStabilizer</object-name>
+           <property-base>sim/model/livery</property-base>
+           <texture-prop>texture</texture-prop>
+           <texture>harrier.png</texture>
+       </animation>
+
+       <animation>
+           <type>material</type>
+           <object-name>RelevatorTop</object-name>
+           <object-name>RelevatorBottom</object-name>
+           <object-name>LelevatorBottom</object-name>
+           <object-name>LelevatorTop</object-name>
+           <property-base>sim/model/livery</property-base>
+           <texture-prop>texture</texture-prop>
+           <texture>harrier.png</texture>
+       </animation>
+
+<!-- END livery select animation code -->	
+
+<!-- Shaders -->
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>Bubble</object-name>
+<object-name>44</object-name>
+<object-name>Canopy.001</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>Bubble</object-name>
+<object-name>44</object-name>
+<object-name>Canopy.001</object-name>
+</animation>
+
+<!-- Canopy -->
+<animation>
+<type>translate</type>
+<object-name>Bubble</object-name>
+<object-name>Canopy</object-name>
+<object-name>Canopy.001</object-name>
+<property>/canopy/position-norm</property>
+<factor>0.7</factor>
+<axis>
+<x1-m>-15.46</x1-m>
+<y1-m>  0.00</y1-m>
+<z1-m> -5.84</z1-m>
+<x2-m>-14.66</x2-m>
+<y2-m>  0.00</y2-m>
+<z2-m> -5.32</z2-m>
+</axis>
+</animation>
+	
 	<!-- Include the 3d Panel -->
  
 	<!-- Front hotspots -->
@@ -833,5 +991,154 @@
 			<factor-prop>sim/model/material/instruments/factor</factor-prop>
 		</emission>
 	</animation>	-->
+	
+	<!--- Special FX -->
+  
+  <!-- aircraft wash modeled in the lines below -->
+  <model>
+    <name>aircraft_wash_l</name>
+    <path>Aircraft/harrier/Models/Effects/wash/aircraft_wash.xml</path>
+    <condition>
+    <equals>
+    <property>controls/state/low_level</property>
+    <value>1</value>
+    </equals>
+    </condition>
+    <offsets>
+      <x-m> 25.00 </x-m>
+      <y-m>  4.50 </y-m>
+      <z-m>  0.00 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+ 
+  <model>
+    <name>aircraft_wash_r</name>
+    <path>Aircraft/harrier/Models/Effects/wash/aircraft_wash.xml</path>
+    <condition>
+      <equals>
+        <property>controls/state/low_level</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    <offsets>
+      <x-m> 25.00 </x-m>
+      <y-m> -4.50 </y-m>
+      <z-m>  0.00 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>aircraft_wash_l</object-name>
+    <object-name>aircraft_wash_r</object-name>
+    <property>position/altitude-agl-ft</property>
+    <condition>
+      <equals>
+        <property>controls/state/low_level</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 300 </ind><dep> -90 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+  
+  
+  <model>
+		<path>Aircraft/harrier/Models/Effects/fx/fx2.xml</path>
+		<offsets>
+			<x-m>0.5</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model> 
+
+	<!-- lights	-->
+	<model>
+<path>Aircraft/harrier/Models/lights/landinglight.xml</path>
+<name>NoseGearLandinglight</name>     
+<condition>
+ <equals>
+<property>gear/gear[0]/position-norm</property>
+<value type="bool">true</value>
+ </equals>
+  </condition>
+
+<offsets>
+<x-m>-15.10</x-m>
+<y-m>  0.000</y-m> 
+<z-m> -7</z-m>      
+</offsets>
+</model>
+ 
+ <model>
+    <name>Taxi-Light-Left</name>
+    <path>Aircraft/harrier/Models/lights/light-cone.xml</path>
+    <offsets>
+      <x-m>-15.20</x-m>
+      <y-m>  0.000</y-m> 
+      <z-m> -7</z-m>
+      <pitch-deg>   -7.000 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>Taxi-Light-Left</object-name>
+    
+    <condition>
+      <equals>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>   
+	
+  <model>
+    <path>Aircraft/harrier/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> -10.300 </x-m>
+      <y-m> 0.000 </y-m> 
+	    <z-m> -5 </z-m> 
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/harrier/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> -9.5 </x-m>
+      <y-m> 0.000 </y-m> 
+	    <z-m> -6.5 </z-m> 
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/harrier/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  -10.0 </x-m>
+      <y-m> -3.6 </y-m>
+      <z-m> -6.05 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/harrier/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m>  -10.0 </x-m>
+      <y-m> 3.6 </y-m>
+      <z-m> -6.05 </z-m>
+    </offsets>
+  </model>
 	
 </PropertyList>
